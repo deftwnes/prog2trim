@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package aula11.ativFunc;
-
-/**
- *
- * @author Manuela
- */
-public class Motorista {
+public class Motorista extends Funcionario
+{
+    private String cnh;
     
+    public Motorista(String nome, String sobrenome, int matricula)
+    {
+        super(nome, sobrenome, matricula);
+    }
+    
+    public String getCnh()
+    {
+        return cnh;
+    }
+    
+    public void setCnh(String cnh)
+    {
+        this.cnh = cnh;
+    }
 }

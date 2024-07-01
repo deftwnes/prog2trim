@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package aula11.ativFunc;
+public class Engenheiro extends Funcionario{
 
-/**
- *
- * @author Manuela
- */
-public class Engenheiro {
+    public Engenheiro (String nome, String sobrenome, int matricula, int crea){
+        super(nome,sobrenome,matricula);
+        this.crea = crea;
+    }
+
+    private int crea;
+
+    public int getCrea() {
+        return crea;
+    }
+
+    public void setCrea(int crea)
+    {
+        this.crea = crea;
+    }
     
 }
